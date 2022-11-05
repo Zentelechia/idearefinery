@@ -7,6 +7,7 @@ initSQL()
 # mentorMatch("cla4846c00002sl8bnu2khur8")
 
 if sys.argv[1] == 1:
-    mentorMatch(sys.argv[2])
+    print(mentorMatch(sys.argv[2]))
+    sys.stdout.flush()
 
 close()
