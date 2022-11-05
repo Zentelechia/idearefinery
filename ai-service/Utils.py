@@ -1,8 +1,9 @@
+import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
 def removeStopWords(text = ""):
-    
+    nltk.download('punkt')
     stop_words = set(stopwords.words('english'))
     word_tokens = word_tokenize(text)
     
@@ -19,6 +20,9 @@ def removeStopWords(text = ""):
     return filtered_sentence
 
 def similarWords(text1, text2):
+    text1 = removeStopWords(text1)
+    text2 = removeStopWords(text2)
+    
     count = 0
     for word in text1:
         if word in text2:
