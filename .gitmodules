@@ -1,0 +1,3 @@
+[submodule "idearefinery-web"]
+	path = idearefinery-web
+	url = https://github.com/Douppen/idearefinery-web.git
